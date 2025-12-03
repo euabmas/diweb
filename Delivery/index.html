@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SertãoTech | Consultoria para Restaurantes Nordestinos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Nunito:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo"><img src="img/SertãoTech.png" alt="Logotipo SertãoTech" class="logo-img"></h1>
+
+            <input type="checkbox" id="menu-toggle-checkbox" class="menu-toggle-checkbox">
+
+            <label for="menu-toggle-checkbox" class="menu-toggle" aria-label="Abrir Menu">
+                <span class="hamburguer-icon"></span>
+            </label>
+
+            <nav class="nav-menu">
+                <a href="#servicos">Serviços</a>
+                <a href="#diferencial">Vantagens</a>
+                <a href="#contato" class="btn-cta-header">Fale Conosco</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Maximizando o Sabor e o Lucro da sua Cozinha Nordestina.</h2>
+                    <p>Consultoria especializada em gestão, delivery e otimização de custos para restaurantes que
+                        celebram a cultura e a gastronomia do Nordeste.</p>
+                    <a href="#contato" class="btn-cta-large">Quero Lucrar Mais!</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicos" class="services-section">
+            <div class="container">
+                <h3>Nossas Especialidades para o Seu Negócio</h3>
+                <div class="service-cards">
+                    <article class="card">
+                        <figure>
+                            <figcaption>Delivery Lucrativo</figcaption>
+                        </figure>
+                        <h4>Otimização de Delivery</h4>
+                        <p>Estratégias de canais próprios, precificação contra taxas e cardápios digitais interativos.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <figure>
+                            <figcaption>Food Cost Regional</figcaption>
+                        </figure>
+                        <h4>Controle de Custos</h4>
+                        <p>Fichas técnicas para pratos complexos e gestão de insumos sazonais nordestinos.</p>
+                    </article>
+
+                    <article class="card">
+                        <figure>
+                            <figcaption>Segurança Alimentar</figcaption>
+                        </figure>
+                        <h4>Conformidade ANVISA</h4>
+                        <p>Implantação de BPF e treinamentos especializados para manipulação de ingredientes típicos.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="diferencial" class="diferencial-section">
+            <div class="container">
+                <h3>Por Que a SertãoTech é o Seu Melhor Investimento?</h3>
+                <p>Nosso diferencial é o entendimento profundo da culinária, cultura e logística regional. Garantimos
+                    resultados que respeitam a autenticidade do seu sabor nordestino.</p>
+            </div>
+        </section>
+
+        <section id="contato" class="contact-section">
+            <div class="container">
+                <h3>Agende uma Análise Gratuita</h3>
+                <p class="contact-subtitle">Preencha o formulário e fale diretamente com um especialista via
+                    WhatsApp para otimizar seu Food Cost em 48 horas.</p>
+
+                <form class="contact-form" action="https://api.whatsapp.com/send" method="GET" target="_blank">
+
+                    <input type="hidden" name="phone" value="556194256733">
+                    <input type="hidden" name="text"
+                        value="Olá! Gostaria de agendar minha Análise Gratuita. Preenchi o formulário no site e quero falar com um especialista.">
+
+                    <label for="nome">Nome do Restaurante:</label>
+                    <input type="text" id="nome" name="nome_restaurante" placeholder="Ex: Culinária do Sertão" required>
+
+                    <label for="telefone">Telefone (WhatsApp):</label>
+                    <input type="tel" id="telefone" name="telefone_cliente" placeholder="(XX) XXXXX-XXXX" required>
+
+                    <label for="email">E-mail de Contato:</label>
+                    <input type="email" id="email" name="email_cliente" placeholder="contato@seurestaurante.com"
+                        required>
+
+                    <label for="servico">Qual seu principal desafio hoje?</label>
+                    <select id="servico" name="desafio_principal">
+                        <option value="" disabled selected>Selecione uma opção</option>
+                        <option value="Alto_custo_e_desperdicio">Alto custo e desperdício</option>
+                        <option value="Melhorar_vendas_delivery">Melhorar as vendas de delivery</option>
+                        <option value="Adequacao_normas_ANVISA">Adequação às normas da ANVISA</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+
+                    <button type="submit" class="btn-cta-submit">Falar com um Especialista</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 SertãoTech Consultoria. Todos os direitos reservados.</p>
+            <div class="footer-links">
+                <a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
