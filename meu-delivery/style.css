@@ -1,0 +1,65 @@
+/* Variáveis de Cores - Amarelo Queimado e Preto */
+:root {
+    --primary: #f7931e; /* Amarelo Queimado */
+    --primary-dark: #d87d17;
+    --bg: #121212; /* Preto Profundo */
+    --card: #1e1e1e; /* Cinza Escuro para os Cards */
+    --text-main: #ffffff;
+    --text-muted: #aaaaaa;
+    --shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #000; /* Fundo total preto */
+    color: var(--text-main);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Container App (Simula celular no PC) */
+.app-container {
+    width: 100%;
+    max-width: 500px;
+    background: var(--bg);
+    min-height: 100vh;
+    box-shadow: 0 0 30px rgba(0,0,0,0.8);
+}
+
+.card {
+    background: var(--card);
+    margin: 15px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    border: 1px solid #333;
+}
+
+/* Botões Customizados */
+.btn-ifood {
+    background-color: var(--primary);
+    color: #000; /* Texto preto no botão amarelo para contraste */
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: 700;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-ifood:hover {
+    background-color: var(--primary-dark);
+}
+
+.btn-pix {
+    background-color: #32bcad;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    width: 100%;
+    cursor: pointer;
+}

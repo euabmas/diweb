@@ -1,0 +1,15 @@
+{
+  "name": "Meu Delivery Pro",
+  "short_name": "MeuDelivery",
+  "start_url": "index.php",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ea1d2c",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/599/599995.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
